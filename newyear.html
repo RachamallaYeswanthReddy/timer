@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>New Year </title>
+	<style type="text/css">
+		div{
+			
+			/* font-size: 60px; */
+			color: black;
+		}
+		body{
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			 align-items: center;
+			 justify-content: center;
+			background-color: antiquewhite;
+			background-position: center;
+			/* background-repeat: no-repeat;
+  			background-attachment: fixed;
+  			background-size: cover; */
+		}
+
+		.countdown-timer-container{
+			font-size: large;
+			display: flex;
+			justify-content: start;
+			align-items: center;
+			flex-direction: row;
+			flex-wrap: wrap;	
+		}
+		.countdown-timer-container div{
+			width: 25%;
+			font-size: 60px;
+			color: black;
+		}
+		.countdown-timer-values{
+			font-size:80px;			
+		}
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing:border-box;
+			box-decoration-break: clone;
+		}
+		.title{
+			font-size: 40px !important;
+		}
+	</style>
+</head>
+<body>
+	<div class="countdown-timer-container" style="position: static;">
+		
+		<div class="countdown-timer-values" id="days">00</div>
+		<div class="countdown-timer-values" id="hours">00</div>
+		<div class="countdown-timer-values" id="minutes">00</div>
+		<div class="countdown-timer-values" id="seconds">00</div>
+		<div>Days</div>
+		<div>Hours</div>
+		<div>Minutes</div>
+		<div>Seconds</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
